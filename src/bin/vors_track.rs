@@ -23,7 +23,7 @@ fn main() {
 
 const USAGE: &str = "Usage: ./vors_track [fr1|fr2|fr3|icl] associations_file";
 
-fn my_run(args: &[String]) -> Result<(), Box<Error>> {
+fn my_run(args: &[String]) -> Result<(), Box<dyn Error>> {
     // Check that the arguments are correct.
     let valid_args = check_args(args)?;
 
